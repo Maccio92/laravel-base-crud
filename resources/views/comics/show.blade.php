@@ -5,10 +5,10 @@
 @endsection
 
 @section('content')
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <h1>{{ $comic->title }}</h1>
+    <div class="container-fluid">
+        <div class="row justify-content-center bg-dark">
+            <div class="col-3">
+                <h1 class="">{{ $comic->title }}</h1>
             </div>
         </div>
         <div class="row">
@@ -24,4 +24,5 @@
             </div>
         </div>
     </div>
+    <a href="{{ route('comics.index') }}">Back</a>
 @endsection
