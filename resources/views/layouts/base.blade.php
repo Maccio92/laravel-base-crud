@@ -8,6 +8,9 @@
     <title>@yield('docTitle')</title>
 </head>
 <body>
-    @yield('content')
+    <header>@yield('header')</header>
+    <main>@yield('content')</main>
+    <footer></footer>
+    
 </body>
 </html>
