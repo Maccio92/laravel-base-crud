@@ -13,10 +13,12 @@
                     
                     <p class="m-0">{{$item -> title}}</p>
                     <a href="{{ route('comics.show', $item) }}">Vai</a>
+                    <a href="{{ route('comics.edit', $item) }}">Edit</a>
                 </div>
                 
         @endforeach
         </div>
+        
     </div>
     {{ $comic->links()}}
 </div>
