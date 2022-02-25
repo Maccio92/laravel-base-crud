@@ -43,7 +43,7 @@
                             <div class="alert alert-danger">{{ $message }}</div>
                     @enderror
                 </div>
-                <button type="submit" class="btn btn-primary"><a class="text-light" href="{{ route('comics.index') }}">Save</a></button>
+                <button type="submit" class="btn btn-primary">Save</button>
             </form>
         </div>
     </div>
