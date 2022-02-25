@@ -11,7 +11,7 @@ class ComicController extends Controller
         'title' => 'required|max:80',
         'author' => 'required|max:80',
         'genre' => 'required|max:60',
-        'text' => 'required',
+        'description' => 'required',
         'price' => 'required|numeric',
     ];
     /**
@@ -49,7 +49,7 @@ class ComicController extends Controller
         $comic->fill($data);
         $comic->save();
     
-        return redirect()->route('comics.show', $comic->id);
+        return redirect()->route('comics.index', $comic->id);
     }
 
     /**
